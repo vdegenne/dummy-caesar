@@ -1,0 +1,36 @@
+{
+  "name": "dummy-caesar",
+  "version": "0.1.0",
+  "description": "A dummy caesar function.",
+  "author": "Valentin Degenne <vdegenne@gmail.com>",
+  "repository": "vdegenne/dummy-caesar",
+  "main": "lib/dummy-caesar",
+  "license": "MIT",
+  "keyword": [
+    "caesar",
+    "crypto",
+    "cryptography",
+    "security"
+  ],
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "yarn clean && tsc",
+    "test": "yarn build && mocha",
+    "test:watch": "tsc-then -- mocha",
+    "format": "find src test -iname '*.ts' | xargs clang-format --style=file -i"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.1",
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^5.0.0",
+    "chai": "^4.1.2",
+    "clang-format": "^1.0.41-c",
+    "mocha": "^5.0.5",
+    "rimraf": "^2.6.2",
+    "source-map-support": "^0.5.4",
+    "tsc-then": "^1.1.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  },
+  "typings": "lib/dummy-caesar.d.ts"
+}
