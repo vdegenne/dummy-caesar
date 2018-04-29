@@ -8,9 +8,9 @@ A dummy caesar function.
 import {caesar} from 'dummy-caesar';
 
 
-caesar.caesar('apple', 0); // 'apple'
-caesar.caesar('apple', 1); // 'bqqmf'
-caesar.caesar('cat', 10); // 'mkd'
+caesar('apple', 0); // 'apple'
+caesar('apple', 1); // 'bqqmf'
+caesar('cat', 10); // 'mkd'
 ```
 
 You are in full rights to hate this package.
